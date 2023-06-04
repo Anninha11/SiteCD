@@ -8,5 +8,5 @@ backgroundColor="#fffffe"
 #define a cor de fundo secundária
 secondaryBackgroundColor="#f1f2f6"
 
-#define a cor do texto como cinza escuro
+#define a cor do texto
 textColor="#31333e"
