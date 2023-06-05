@@ -1,12 +1,15 @@
 [theme]
 #define a cor primária
-primaryColor="#fddbdf"
+primaryColor="#ffffff"
 
 #define a cor de fundo
-backgroundColor="#fffffe"
+backgroundColor="#f6e8ff"
 
 #define a cor de fundo secundária
-secondaryBackgroundColor="#f1f2f6"
+secondaryBackgroundColor="#6c4e80"
 
 #define a cor do texto
-textColor="#31333e"
+textColor="#000000"
+
+#define a fonte do texto
+font="serif"
