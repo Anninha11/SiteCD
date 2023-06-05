@@ -7,7 +7,7 @@ from functions import *
 import altair as alt
 
 #configura estruturas da página
-st.set_page_config(page_title="Buscador de Preço", page_icon="📐", layout="wide")
+st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wide")
 
 #define a função principal do site
 def main():
