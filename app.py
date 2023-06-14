@@ -26,7 +26,7 @@ def main():
         st.caption("- Anna Beatriz Veronez \n- Anna Clara Legey \n- Ana Paula Salvador \n- Nataly de Abreu")
         st.caption('Sob orientação do Prof. Matheus C. Pestana (matheus.pestana@fgv.br)')
     st.title('Buscador de preços')
-    st.markdown('Insira o produto cosmético desejado para que o site te informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon.')
+    st.markdown('O site tem como objetivo ajudar os consumidores na busca pelo melhor preço do produto desejado. Insira o cosmético e sua respectiva marca para que o site lhe informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon.')
 #verifica se o botão foi apertado
     if buscar:
         st.header('Resultados da busca')
