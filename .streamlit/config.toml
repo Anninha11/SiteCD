@@ -6,10 +6,10 @@ primaryColor="#ffffff"
 backgroundColor="#f6e8ff"
 
 #define a cor de fundo secundária
-secondaryBackgroundColor="#6c4e80"
+secondaryBackgroundColor="#e4c8e8"
 
 #define a cor do texto
 textColor="#000000"
 
 #define a fonte do texto
-font="serif"
+font="monospace"
