@@ -31,8 +31,9 @@ def raspaML(query):
 #extrai os dados dos produtos
     for produto in produtos:
         titulo = produto.select_one('a')['title']
-        imagem_div = produto.select_one('.carousel-container')
-        imagem = imagem_div.select('img')[0]['data-src']
+        #imagem_div = produto.select_one('.carousel-container')
+        #imagem = imagem_div.select('img')[0]['data-src']
+        imagem = produto.find('div',{'class': 'ui-search-result__image'}).find("a").find('img')['data-src']
         imagem = imagem.replace('https://', 'http://')
         preco = produto.select_one('.price-tag-amount').get_text(strip=True)
         preco_clean = float(preco.replace('R$', '').replace('.', '').replace(',', '.'))
@@ -123,10 +124,10 @@ def buscadorGeral(query):
         else:
             result_amazon = result_amazon
             break
-    #result_ml = raspaML(query)
+    result_ml = raspaML(query)
     result_bb = raspaBeautyBox(query)
     result_bnw = raspaBelezaNaWeb(query)
-    df = pd.DataFrame(result_bnw + result_bb + result_amazon)
+    df = pd.DataFrame(result_bnw + result_bb + result_ml + result_amazon)
     df.dropna(subset=['preço_clean'], inplace=True)
     df = df.sort_values(by=['preço_clean'])
     df['título'] = df['título'].apply(lambda x: unidecode(x))
