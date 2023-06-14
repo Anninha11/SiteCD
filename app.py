@@ -15,7 +15,6 @@ def main():
 #define a barra lateral 
     with st.sidebar:
         st.title('Beauty Deals')
-        st.markdown('Insira o produto cosmético desejado para que o site te informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon')
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
             query = st.text_input('Digite o produto')
@@ -27,6 +26,7 @@ def main():
         st.caption("- Anna Beatriz Veronez \n- Anna Clara Legey \n- Ana Paula Salvador \n- Nataly de Abreu")
         st.caption('Sob orientação do Prof. Matheus C. Pestana (matheus.pestana@fgv.br)')
     st.title('Buscador de preços')
+    st.markdown('Insira o produto cosmético desejado para que o site te informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon')
 #verifica se o botão foi apertado
     if buscar:
         st.header('Resultados da busca')
