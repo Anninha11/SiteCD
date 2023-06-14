@@ -123,10 +123,10 @@ def buscadorGeral(query):
         else:
             result_amazon = result_amazon
             break
-    result_ml = raspaML(query)
+    #result_ml = raspaML(query)
     result_bb = raspaBeautyBox(query)
     result_bnw = raspaBelezaNaWeb(query)
-    df = pd.DataFrame(result_bnw + result_bb + result_ml + result_amazon)
+    df = pd.DataFrame(result_bnw + result_bb + result_amazon)
     df.dropna(subset=['preço_clean'], inplace=True)
     df = df.sort_values(by=['preço_clean'])
     df['título'] = df['título'].apply(lambda x: unidecode(x))
