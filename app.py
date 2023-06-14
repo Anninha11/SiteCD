@@ -28,7 +28,7 @@ def main():
 #Carrega a logo 
     imagem = "beautydeals.png"
 #Exibe a imagem no Streamlit
-    st.image(imagem, caption='Descrição da imagem', use_column_width=True)
+    st.image(imagem, use_column_width=True)
     st.title('Buscador de preços')
     st.markdown('O site tem como objetivo ajudar os consumidores na busca pelo melhor preço do produto desejado. Insira o cosmético e sua respectiva marca para que o site lhe informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon. Boas compras!')
 #verifica se o botão foi apertado
