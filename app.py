@@ -15,6 +15,7 @@ def main():
 #define a barra lateral 
     with st.sidebar:
         st.title('Beauty Deals')
+        st.text('Insira o produto cosmético desejado para que o site te informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon')
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
             query = st.text_input('Digite o produto')
