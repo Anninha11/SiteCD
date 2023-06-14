@@ -12,4 +12,4 @@ secondaryBackgroundColor="#e4c8e8"
 textColor="#000000"
 
 #define a fonte do texto
-font="monospace"
+font="sans serif"
