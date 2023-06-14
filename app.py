@@ -8,7 +8,6 @@ import altair as alt
 
 #configura estruturas da página
 st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wide")
-
 st.text('Insira o produto cosmético desejado para que o site te informe os melhores preços entre as lojas: 
 Beauty Box, Beleza na Web, Mercado livre e Amazon')
 
