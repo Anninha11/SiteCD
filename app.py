@@ -14,7 +14,7 @@ def main():
 #Carrega a logo 
     imagem = "logodeals.png"
 #define a barra lateral 
-    with st.sidebar
+    with st.sidebar:
         st.title('Beauty Deals')       
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
