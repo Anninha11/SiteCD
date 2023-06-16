@@ -26,7 +26,7 @@ def main():
          col2.title('Beauty Deals')
 #Exibindo a imagem "beautyd.png"
          st.image(imagem, use_column_width=False)
-        with st.form(key='form_busca'):
+         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
             query = st.text_input('Digite o produto')
             # query = tipo + ' ' + query
