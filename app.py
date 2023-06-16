@@ -11,10 +11,12 @@ st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wi
 
 #define a função principal do site
 def main():
-#Carrega a logo 
-    imagem = "logodeals.png"
 #define a barra lateral 
+#Carrega a logo 
+    imagem = "logodealss.png"
     with st.sidebar:
+#Exibe a imagem no Streamlit
+        st.image(imagem,use_column_width=False)
         st.title('Beauty Deals')       
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
@@ -26,8 +28,6 @@ def main():
         st.caption('Desenvolvido por:')
         st.caption("- Anna Beatriz Veronez \n- Anna Clara Legey \n- Ana Paula Salvador \n- Nataly de Abreu")
         st.caption('Sob orientação do Prof. Matheus C. Pestana (matheus.pestana@fgv.br)')
-#Exibe a imagem no Streamlit
-    st.image(imagem,use_column_width=False)
     st.title('Buscador de preços')
     st.markdown('O site tem como objetivo ajudar os consumidores na busca pelo melhor preço do produto desejado. Insira o cosmético e sua respectiva marca para que o site lhe informe os melhores preços entre as lojas: Beauty Box, Beleza na Web, Mercado livre e Amazon. Boas compras!')
 #verifica se o botão foi apertado
