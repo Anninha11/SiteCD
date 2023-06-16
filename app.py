@@ -11,14 +11,12 @@ st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wi
 
 #define a função principal do site
 def main():
-
-#define a barra lateral 
-    with st.sidebar:
-        st.title('Beauty Deals') 
 #Carrega a logo 
         imagem = "logodeals.png"
+#define a barra lateral 
+    with st.sidebar:
+        st.title('Beauty Deals')  st.image(imagem,use_column_width=False)
 #Exibe a imagem no Streamlit
-        st.image(imagem,use_column_width=False)
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
             query = st.text_input('Digite o produto')
