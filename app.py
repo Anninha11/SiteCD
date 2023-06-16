@@ -26,7 +26,7 @@ def main():
         st.caption("- Anna Beatriz Veronez \n- Anna Clara Legey \n- Ana Paula Salvador \n- Nataly de Abreu")
         st.caption('Sob orientação do Prof. Matheus C. Pestana (matheus.pestana@fgv.br)')
 #Carrega a logo 
-    imagem = "beautyd.png"
+    imagem = "beautyde.png"
 #Exibe a imagem no Streamlit
     st.image(imagem,use_column_width=False)
     st.title('Buscador de preços')
