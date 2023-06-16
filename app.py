@@ -12,7 +12,7 @@ st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wi
 #define a função principal do site
 def main():
 #Carrega a logo 
-imagem = "logodeals.png"
+    imagem = "logodeals.png"
 #define a barra lateral 
     with st.sidebar:
 #Exibe a imagem no Streamlit
