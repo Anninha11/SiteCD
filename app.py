@@ -16,17 +16,9 @@ def main():
 #define a barra lateral 
     with st.sidebar:
 #Exibe a imagem no Streamlit
-        #st.image(imagem,use_column_width=False)
-        #st.title('Beauty Deals')       
-#Criando duas colunas para posicionar a logo e o título lado a lado
-         col1, col2 = st.beta_columns([1, 5])
-#Exibindo a logo na primeira coluna
-         col1.image(logo, use_column_width=False)
-#Exibindo o título "Beauty Deals" na segunda coluna
-         col2.title('Beauty Deals')
-#Exibindo a imagem "beautyd.png"
-         st.image(imagem, use_column_width=False)
-         with st.form(key='form_busca'):
+        st.image(imagem,use_column_width=False)
+        st.title('Beauty Deals')       
+        with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
             query = st.text_input('Digite o produto')
             # query = tipo + ' ' + query
