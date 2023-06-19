@@ -30,17 +30,20 @@ def raspaML(query):
     produtos = soup.select('.andes-card')
 #extrai os dados dos produtos
     for produto in produtos:
-        titulo = produto.select_one('a')['title']
-        #imagem_div = produto.select_one('.carousel-container')
-        #imagem = imagem_div.select('img')[0]['data-src']
-        imagem = produto.find('div',{'class': 'ui-search-result__image'}).find("a").find('img')['data-src']
-        imagem = imagem.replace('https://', 'http://')
-        preco = produto.select_one('.price-tag-amount').get_text(strip=True)
-        preco_clean = float(preco.replace('R$', '').replace('.', '').replace(',', '.'))
-        link = produto.select_one('a')['href']
-        origem = 'Mercado Livre'
-        dados = {'título': titulo, 'imagem': imagem, 'preço': preco, 'preço_clean': preco_clean,'link': link, 'origem': origem}
-        lista_produtos.append(dados)
+        try:
+            titulo = produto.select_one('a')['title']
+            #imagem_div = produto.select_one('.carousel-container')
+            #imagem = imagem_div.select('img')[0]['data-src']
+            imagem = produto.find('div',{'class': 'ui-search-result__image'}).find("a").find('img')['data-src']
+            imagem = imagem.replace('https://', 'http://')
+            preco = produto.select_one('.price-tag-amount').get_text(strip=True)
+            preco_clean = float(preco.replace('R$', '').replace('.', '').replace(',', '.'))
+            link = produto.select_one('a')['href']
+            origem = 'Mercado Livre'
+            dados = {'título': titulo, 'imagem': imagem, 'preço': preco, 'preço_clean': preco_clean,'link': link, 'origem': origem}
+            lista_produtos.append(dados)
+        except:
+            pass
     return lista_produtos
 
 #função que raspa os dados da Amazon
