@@ -121,12 +121,12 @@ def raspaBelezaNaWeb(query):
 def buscadorGeral(query):
     query = unidecode(query)
     #while True:
-    #    result_amazon = raspaAmazon(query)
-    #    if len(result_amazon) == 0:
-    #        continue
-    #    else:
-    #        result_amazon = result_amazon
-    #        break
+        result_amazon = raspaAmazon(query)
+        if len(result_amazon) == 0:
+            continue
+        else:
+            result_amazon = result_amazon
+            break
     result_ml = raspaML(query)
     result_bb = raspaBeautyBox(query)
     result_bnw = raspaBelezaNaWeb(query)
