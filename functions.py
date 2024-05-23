@@ -120,7 +120,7 @@ def raspaBelezaNaWeb(query):
 #função que faz a busca geral nos sites
 def buscadorGeral(query):
     query = unidecode(query)
-    #while True:
+    while True:
         result_amazon = raspaAmazon(query)
         if len(result_amazon) == 0:
             continue
@@ -130,7 +130,7 @@ def buscadorGeral(query):
     result_ml = raspaML(query)
     result_bb = raspaBeautyBox(query)
     result_bnw = raspaBelezaNaWeb(query)
-    df = pd.DataFrame(result_bnw + result_bb + result_ml)# + result_amazon)
+    df = pd.DataFrame(result_bnw + result_bb + result_ml) + result_amazon)
     df.dropna(subset=['preço_clean'], inplace=True)
     df = df.sort_values(by=['preço_clean'])
     df['título'] = df['título'].apply(lambda x: unidecode(x))
