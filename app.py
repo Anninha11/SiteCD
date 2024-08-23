@@ -13,7 +13,7 @@ st.set_page_config(page_title="Buscador de Preço", page_icon="🔍", layout="wi
 def main():
 #define a barra lateral 
 #Carrega a logo 
-    imagem = "logositecd.png"
+    imagem = "Simbolo Beauty Deals.png"
     with st.sidebar:
 #Exibe a imagem no Streamlit
         st.image(imagem,use_column_width=False)
