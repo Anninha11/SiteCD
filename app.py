@@ -16,7 +16,7 @@ def main():
     imagem = "Logo Beauty Deals.png"
     with st.sidebar:
 #Exibe a imagem no Streamlit
-        st.image(imagem,use_column_width=False)
+        #st.image(imagem,use_column_width=False)
         st.title('Beauty Deals')       
         with st.form(key='form_busca'):
 #cria uma caixa de texto para o usuário digitar o produto que deseja buscar 
